@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">QuizzlerKotlin</string>
     <string name="img_background_bubbles">Image of brackground app</string>
-    <string name="button_true">True</string>
-    <string name="button_false">False</string>
+
+    <string name="button_option1">Opcion1</string>
+    <string name="button_option2">Opcion2</string>
+    <string name="button_option3">Opcion3</string>
 </resources>
