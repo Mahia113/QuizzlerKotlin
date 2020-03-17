@@ -4,6 +4,9 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
+import androidx.core.content.ContextCompat
+import com.google.android.material.button.MaterialButton
 import com.joseluis.quizzlerkotlin.R
 import com.joseluis.quizzlerkotlin.model.QuizModel
 import kotlinx.android.synthetic.main.activity_quiz.*
@@ -26,7 +29,7 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?){
 
         if(quizModel.isACorrectAnswer(v!!.tag.toString())){
-            v.setBackgroundColor(Color.GREEN)
+            (v as MaterialButton).setBackgroundTintList(ContextCompat.getColorStateList(this@QuizActivity, R.color.colorAccent));
         }else{
             v.setBackgroundColor(Color.RED)
         }
